@@ -1,11 +1,11 @@
 import React from "react"
 import { makeStyles } from "@material-ui/core/styles"
-import CssBaseline from "@material-ui/core/CssBaseline"
-import Grid from "@material-ui/core/Grid"
-import Container from "@material-ui/core/Container"
-import GitHubIcon from "@material-ui/icons/GitHub"
-import FacebookIcon from "@material-ui/icons/Facebook"
-import TwitterIcon from "@material-ui/icons/Twitter"
+import { Grid, Container } from "@material-ui/core"
+import {
+  GitHub as GitHubIcon,
+  Facebook as FacebookIcon,
+  Twitter as TwitterIcon,
+} from "@material-ui/icons"
 import {
   Header,
   MainFeaturedPost,
@@ -180,7 +180,6 @@ export default function Blog() {
 
   return (
     <React.Fragment>
-      <CssBaseline />
       <Container maxWidth="lg">
         <Header title="Blog" sections={sections} />
         <main>
