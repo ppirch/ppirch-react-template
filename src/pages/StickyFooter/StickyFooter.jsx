@@ -28,7 +28,6 @@ const StickyFooter = () => {
 
   return (
     <div className={classes.root}>
-      <CssBaseline />
       <Container component="main" className={classes.main} maxWidth="sm">
         <Typography variant="h2" component="h1" gutterBottom>
           Sticky footer
