@@ -6,7 +6,7 @@ import {
   ListItem,
   ListItemText,
   Grid,
-} from "@material-ui/core/Typography"
+} from "@material-ui/core"
 
 const products = [
   { name: "Product 1", desc: "A nice thing", price: "$9.99" },
