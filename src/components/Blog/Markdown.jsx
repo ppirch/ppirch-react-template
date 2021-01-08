@@ -1,13 +1,18 @@
 import React from "react"
 import ReactMarkdown from "react-markdown"
 import { withStyles } from "@material-ui/core/styles"
-import Typography from "@material-ui/core/Typography"
-import Link from "@material-ui/core/Link"
-import Table from "@material-ui/core/Table"
-import TableContainer from "@material-ui/core/TableContainer"
-import Paper from "@material-ui/core/Paper"
-import Box from "@material-ui/core/Box"
-import { TableHead, TableRow, TableCell, TableBody } from "@material-ui/core"
+import {
+  Typography,
+  Link,
+  Table,
+  TableContainer,
+  Paper,
+  Box,
+  TableHead,
+  TableRow,
+  TableCell,
+  TableBody,
+} from "@material-ui/core"
 
 const styles = (theme) => ({
   listItem: {
