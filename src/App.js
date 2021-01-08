@@ -1,33 +1,38 @@
-import React from 'react';
-import Container from '@material-ui/core/Container';
-import Typography from '@material-ui/core/Typography';
-import Box from '@material-ui/core/Box';
-import Link from '@material-ui/core/Link';
-import ProTip from './ProTip';
+import React, { Component } from "react"
+import { Switch, Route } from "react-router-dom"
+import {
+  Album,
+  Blog,
+  Checkout,
+  Home,
+  SignIn,
+  SignInSide,
+  SignUp,
+  StickyFooter,
+  Pricing,
+  NotFoundPage,
+  Dashboard,
+} from "./pages"
 
-function Copyright() {
+const App = () => {
   return (
-    <Typography variant="body2" color="textSecondary" align="center">
-      {'Copyright © '}
-      <Link color="inherit" href="https://material-ui.com/">
-        Your Website
-      </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
-    </Typography>
-  );
+    <React.Fragment>
+      <div className="App container">
+        <Switch>
+          <Route path="/" component={Home} exact />
+          <Route path="/album" component={Album} exact />
+          <Route path="/blog" component={Blog} exact />
+          <Route path="/checkout" component={Checkout} exact />
+          <Route path="/pricing" component={Pricing} exact />
+          <Route path="/signup" component={SignUp} exact />
+          <Route path="/signin" component={SignIn} exact />
+          <Route path="/signin-side" component={SignInSide} exact />
+          <Route path="/sticky-footer" component={StickyFooter} exact />
+          <Route path="/dashboard" component={Dashboard} exact />
+          <Route component={NotFoundPage} exact />
+        </Switch>
+      </div>
+    </React.Fragment>
+  )
 }
-
-export default function App() {
-  return (
-    <Container maxWidth="sm">
-      <Box my={4}>
-        <Typography variant="h4" component="h1" gutterBottom>
-          Create React App v4-beta example
-        </Typography>
-        <ProTip />
-        <Copyright />
-      </Box>
-    </Container>
-  );
-}
+export default App
