@@ -11,7 +11,7 @@ import {
   Typography,
   Container,
 } from "@material-ui/core"
-import { LockOutlined as LockOutlinedIcon } from "@material-ui/icons/LockOutlined"
+import { LockOutlined as LockOutlinedIcon } from "@material-ui/icons"
 import { makeStyles } from "@material-ui/core/styles"
 import { Copyright } from "../../components/"
 
