@@ -14,12 +14,16 @@
     "@material-ui/icons": "^4.11.2",
     "@material-ui/lab": "^4.0.0-alpha.57",
     "clsx": "latest",
+    "js-cookie": "^2.2.1",
+    "jwt-decode": "^3.1.2",
     "markdown-to-jsx": "^7.1.0",
     "react": "latest",
     "react-dom": "latest",
     "react-markdown": "^5.0.3",
     "react-router-dom": "^5.2.0",
     "react-scripts": "latest",
+    "rechart": "^0.0.1",
+    "recharts": "2.0.0-beta.8",
     "web-vitals": "^1.0.1"
   },
   "browserslist": {
