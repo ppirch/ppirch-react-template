@@ -1,8 +1,6 @@
-import React, { Component } from "react"
-import { Switch, Route } from "react-router-dom"
-import { Home, NotFoundPage } from "./pages"
+import React from "react"
+import { Route } from "react-router-dom"
 import { NavBar } from "./components"
-import CssBaseline from "@material-ui/core/CssBaseline"
 
 const RouteWithNavBar = ({ component: Component, ...rest }) => {
   return (
