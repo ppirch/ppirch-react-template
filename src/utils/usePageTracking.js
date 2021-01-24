@@ -8,7 +8,7 @@ const usePageTracking = () => {
 
   useEffect(() => {
     if (!window.location.href.includes("localhost")) {
-      ReactGA.initialize("UA-188004638-1")
+      ReactGA.initialize("UA-000000000-0")
     }
     setInitialized(true)
   }, [])
