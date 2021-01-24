@@ -1,12 +1,8 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { withStyles } from "@material-ui/core/styles"
-import Typography from "@material-ui/core/Typography"
-import Button from "@material-ui/core/Button"
-import Popper from "@material-ui/core/Popper"
+import { Typography, Button, Popper, Fade, Paper } from "@material-ui/core"
 import { usePopupState, bindToggle, bindPopper } from "material-ui-popup-state/hooks"
-import Fade from "@material-ui/core/Fade"
-import Paper from "@material-ui/core/Paper"
 
 const styles = (theme) => ({
   typography: {
