@@ -35,15 +35,8 @@ const Content = (props) => {
       const { image, fact } = data
       return (
         <>
-          <Box my={4}>
-            <Typography variant="h4" component="h1" gutterBottom>
-              Cat Image And Random Fact
-            </Typography>
-            <Image src={image.file} style={{ margin: 10 }} />
-            <Typography>Cat Fact : {fact.text}</Typography>
-            <ProTip />
-            <Copyright />
-          </Box>
+          <Image src={image.file} style={{ margin: 10 }} />
+          <Typography>Cat Fact : {fact.text}</Typography>
         </>
       )
     case "failure":
@@ -53,14 +46,21 @@ const Content = (props) => {
   }
 }
 
-const ImageShow = (props) => {
+const ShowImage = (props) => {
   const { history } = props
 
   return (
     <Container maxWidth="sm">
-      <Content sub={{}} />
+      <Box my={4}>
+        <Typography variant="h4" component="h1" gutterBottom>
+          Cat Image And Random Fact
+        </Typography>
+        <Content sub={{}} />
+        <ProTip />
+        <Copyright />
+      </Box>
     </Container>
   )
 }
 
-export default ImageShow
+export default ShowImage
