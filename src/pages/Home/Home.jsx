@@ -10,8 +10,9 @@ const setPub = async (sub) => {
   await new Promise((resolve) => setTimeout(resolve, 500))
   return { hello: "world" }
 }
+
 const Content = (props) => {
-  const { sub } = props
+  const { sub, redirect } = props
   let stateParser
   const [current, send] = useMachine(useContent, {
     services: {
@@ -44,6 +45,7 @@ const Content = (props) => {
             </Typography>
             <Box style={{ margin: 10, padding: 10 }}>
               Click to go <LinkDOM to="/album">Album</LinkDOM>
+              <Button onClick={redirect}>Redirect</Button>
             </Box>
             <Box style={{ margin: 10, padding: 10 }}>
               <MenuPopup />
@@ -61,10 +63,15 @@ const Content = (props) => {
   }
 }
 
-export default function App() {
+export default function App(props) {
+  const { history } = props
+  const redirect = () => {
+    history.push("/album")
+  }
+
   return (
     <Container maxWidth="sm">
-      <Content sub />
+      <Content sub={{}} redirect={redirect} />
     </Container>
   )
 }
