@@ -1,5 +1,5 @@
 import React, { useEffect } from "react"
-import { Link, Link as LinkDOM } from "react-router-dom"
+import { Link as LinkDOM } from "react-router-dom"
 import { Container, Typography, Box, Button } from "@material-ui/core"
 import { Copyright, ProTip, MenuPopup } from "../../components"
 import { useContent } from "../../utils/machine"
