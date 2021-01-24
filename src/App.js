@@ -4,6 +4,7 @@ import {
   Album,
   Blog,
   Checkout,
+  Form,
   Home,
   SignIn,
   SignInSide,
@@ -12,6 +13,7 @@ import {
   Pricing,
   NotFoundPage,
   Dashboard,
+  ImageShow,
 } from "./pages"
 import usePageTracking from "./utils/usePageTracking"
 
@@ -25,6 +27,8 @@ const App = () => {
           <Route path="/album" component={Album} exact />
           <Route path="/blog" component={Blog} exact />
           <Route path="/checkout" component={Checkout} exact />
+          <Route path="/form" component={Form} exact />
+          <Route path="/imageShow" component={ImageShow} exact />
           <Route path="/pricing" component={Pricing} exact />
           <Route path="/signup" component={SignUp} exact />
           <Route path="/signin" component={SignIn} exact />
