@@ -1,10 +1,8 @@
 import React, { useEffect } from "react"
-import { Link as LinkDOM } from "react-router-dom"
-import { Container, Typography, Box, Button } from "@material-ui/core"
-import { Copyright, ProTip, MenuPopup, Form } from "../../components"
+import { Container, Typography, Box } from "@material-ui/core"
+import { Copyright, ProTip, Form } from "../../components"
 import { useContent } from "../../utils/machine"
 import { useMachine } from "@xstate/react"
-import ReactJson from "react-json-view"
 
 const setPub = async (sub) => {
   await new Promise((resolve) => setTimeout(resolve, 500))

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react"
 import { Container, Typography, Box } from "@material-ui/core"
-import { Copyright, ProTip, Form } from "../../components"
+import { Copyright, ProTip } from "../../components"
 import { useContent } from "../../utils/machine"
 import { useMachine } from "@xstate/react"
 import { getCatAPI } from "../../api/cat-api"
