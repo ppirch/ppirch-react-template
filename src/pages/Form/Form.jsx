@@ -12,7 +12,7 @@ const setPub = async (sub) => {
 }
 
 const Content = (props) => {
-  const { sub, redirect } = props
+  const { sub } = props
   let stateParser
   const [current, send] = useMachine(useContent, {
     services: {
@@ -58,13 +58,10 @@ const Content = (props) => {
 
 export default function App(props) {
   const { history } = props
-  const redirect = () => {
-    history.push("/album")
-  }
 
   return (
     <Container maxWidth="sm">
-      <Content sub={{}} redirect={redirect} />
+      <Content sub={{}} />
     </Container>
   )
 }
