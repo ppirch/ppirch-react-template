@@ -28,3 +28,6 @@ export { default as Title } from "./Dashboard/Title.jsx"
 export { default as MenuPopup } from "./PopupState/MenuPopup.jsx"
 export { default as Popover } from "./PopupState/Popover.jsx"
 export { default as Popper } from "./PopupState/Popper.jsx"
+
+// Form
+export { default as Form } from "./Form/Form.jsx"
