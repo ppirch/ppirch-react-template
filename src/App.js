@@ -14,6 +14,7 @@ import {
   Dashboard,
 } from "./pages"
 import usePageTracking from "./utils/usePageTracking"
+
 const App = () => {
   usePageTracking()
   return (
