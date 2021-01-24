@@ -6,14 +6,17 @@ import App from "./App"
 import theme from "./theme"
 import reportWebVitals from "./reportWebVitals"
 import { BrowserRouter } from "react-router-dom"
+import { ConfirmProvider } from "material-ui-confirm"
 
 ReactDOM.render(
   <ThemeProvider theme={theme}>
-    {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
-    <BrowserRouter>
-      <CssBaseline />
-      <App />
-    </BrowserRouter>
+    <ConfirmProvider>
+      {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
+      <BrowserRouter>
+        <CssBaseline />
+        <App />
+      </BrowserRouter>
+    </ConfirmProvider>
   </ThemeProvider>,
   document.querySelector("#root")
 )
