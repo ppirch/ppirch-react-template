@@ -9,6 +9,8 @@
     "eject": "react-scripts eject"
   },
   "dependencies": {
+    "@data-driven-forms/mui-component-mapper": "^2.20.2",
+    "@data-driven-forms/react-form-renderer": "^2.20.2",
     "@material-ui/core": "latest",
     "@material-ui/data-grid": "^4.0.0-alpha.15",
     "@material-ui/icons": "^4.11.2",
@@ -22,6 +24,8 @@
     "js-cookie": "^2.2.1",
     "jwt-decode": "^3.1.2",
     "lodash": "^4.17.20",
+    "material-ui-confirm": "^2.1.1",
+    "material-ui-image": "^3.3.1",
     "material-ui-popup-state": "^1.7.1",
     "query-string": "^6.13.8",
     "react": "latest",
