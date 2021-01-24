@@ -13,8 +13,9 @@ import {
   NotFoundPage,
   Dashboard,
 } from "./pages"
-
+import usePageTracking from "./utils/usePageTracking"
 const App = () => {
+  usePageTracking()
   return (
     <React.Fragment>
       <div className="App container">
