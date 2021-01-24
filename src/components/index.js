@@ -23,3 +23,8 @@ export { default as Chart } from "./Dashboard/Chart.jsx"
 export { default as Deposits } from "./Dashboard/Deposits.jsx"
 export { default as Orders } from "./Dashboard/Orders.jsx"
 export { default as Title } from "./Dashboard/Title.jsx"
+
+// PopupState
+export { default as MenuPopup } from "./PopupState/MenuPopup.jsx"
+export { default as Popover } from "./PopupState/Popover.jsx"
+export { default as Popper } from "./PopupState/Popper.jsx"
