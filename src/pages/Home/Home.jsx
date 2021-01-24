@@ -1,6 +1,7 @@
 import React, { useEffect } from "react"
-import { Container, Typography, Box } from "@material-ui/core"
-import { Copyright, ProTip, MenuPopup, Popover, Popper } from "../../components"
+import { Link, Link as LinkDOM } from "react-router-dom"
+import { Container, Typography, Box, Button } from "@material-ui/core"
+import { Copyright, ProTip, MenuPopup } from "../../components"
 import { useContent } from "../../utils/machine"
 import { useMachine } from "@xstate/react"
 import ReactJson from "react-json-view"
@@ -41,6 +42,9 @@ const Content = (props) => {
             <Typography variant="h4" component="h1" gutterBottom>
               Create React App v4-beta example
             </Typography>
+            <Box style={{ margin: 10, padding: 10 }}>
+              Click to go <LinkDOM to="/album">Album</LinkDOM>
+            </Box>
             <Box style={{ margin: 10, padding: 10 }}>
               <MenuPopup />
             </Box>
