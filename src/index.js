@@ -7,17 +7,22 @@ import theme from "./theme"
 import reportWebVitals from "./reportWebVitals"
 import { BrowserRouter } from "react-router-dom"
 import { ConfirmProvider } from "material-ui-confirm"
+import { QueryClient, QueryClientProvider } from 'react-query'
+
+const queryClient = new QueryClient()
 
 ReactDOM.render(
-  <ThemeProvider theme={theme}>
-    <ConfirmProvider>
-      {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
-      <BrowserRouter>
-        <CssBaseline />
-        <App />
-      </BrowserRouter>
-    </ConfirmProvider>
-  </ThemeProvider>,
+  <QueryClientProvider client={queryClient}>
+    <ThemeProvider theme={theme}>
+      <ConfirmProvider>
+        {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
+        <BrowserRouter>
+          <CssBaseline />
+          <App />
+        </BrowserRouter>
+      </ConfirmProvider>
+    </ThemeProvider>
+  </QueryClientProvider>,
   document.querySelector("#root")
 )
 
