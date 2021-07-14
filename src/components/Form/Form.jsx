@@ -1,5 +1,5 @@
 import React from "react"
-import FormRenderer, { componentTypes, validatorTypes } from "@data-driven-forms/react-form-renderer"
+import {FormRenderer, componentTypes, validatorTypes } from "@data-driven-forms/react-form-renderer"
 import { componentMapper, FormTemplate } from "@data-driven-forms/mui-component-mapper"
 
 const validatorMapper = {
