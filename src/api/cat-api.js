@@ -7,7 +7,7 @@ export const getCatImage = async () => {
 }
 
 export const getCatFacts = async () => {
-  const queryURL = `https://cat-fact.herokuapp.com/facts/random`
+  const queryURL = `https://catfact.ninja/fact`
   const { data } = await axios.get(queryURL)
   return data
 }
